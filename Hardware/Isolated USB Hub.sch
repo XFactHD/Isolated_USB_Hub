@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Isolated USB Hub-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -1869,4 +1868,36 @@ Wire Wire Line
 	14350 12150 14350 12200
 Wire Wire Line
 	14350 12500 14350 12550
+$Comp
+L Device:LED D4
+U 1 1 5FE52A0B
+P 4000 1300
+F 0 "D4" H 4000 1200 50  0000 C CNN
+F 1 "PLED" H 4000 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4000 1300 50  0001 C CNN
+F 3 "~" H 4000 1300 50  0001 C CNN
+	1    4000 1300
+	-1   0    0    1   
+$EndComp
+Text GLabel 3450 1300 0    50   Input ~ 0
++5V
+Text GLabel 4200 1300 2    50   Input ~ 0
+GND_HUB
+$Comp
+L Device:R R20
+U 1 1 5FE6C3A1
+P 3650 1300
+F 0 "R20" V 3550 1300 50  0000 C CNN
+F 1 "470" V 3650 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3580 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1300 3500 1300
+Wire Wire Line
+	3800 1300 3850 1300
+Wire Wire Line
+	4150 1300 4200 1300
 $EndSCHEMATC
